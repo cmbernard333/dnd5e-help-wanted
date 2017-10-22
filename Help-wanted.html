@@ -3,33 +3,32 @@
 <head>
     <title>Help Wanted!</title>
     <style type="text/css">
-        html, body { 
+        @font-face {
+            font-family: "Nodesto Caps Condensed";
+            src: url('./5th_Edition_Font_Clones_CC/Nodesto Caps Condensed.otf') format("opentype") ;
+        }
+        body { 
             height:100%;
             margin: 0;
             padding: 0;
             width: 100%;
-            font-size: 100px;
-            font-family: "Nodesto Caps Condensed";
-            color: red;
             background-color: #EEE5CE;
             background-image: url(phb-background.jpg);
         }
-        body {
-            display: table;
-        }
         .my-title {
+            font-size: 100px;
+            font-family: "Nodesto Caps Condensed";
+            color: red;
             text-align: center;
             display: table-cell;
             vertical-align: top;
+            position: absolute;
         }
         .my-block {
             text-align: center;
             display: table-cell;
             vertical-align: middle;
-        }
-        @font-face {
-            font-family: "Nodesto Caps Condensed";
-            src: url('./5th_Edition_Font_Clones_CC/Nodesto Caps Condensed.otf') format("opentype") ;
+            position: relative;
         }
 
     </style>
