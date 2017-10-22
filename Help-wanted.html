@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Help Wanted!</title>
-    <style type="text/css">
+    <head>
+        <title>Help Wanted!</title>
+        <style type="text/css">
         @font-face {
-            font-family: "Nodesto Caps Condensed";
-            src: url('./5th_Edition_Font_Clones_CC/Nodesto Caps Condensed.otf') format("opentype") ;
+        font-family: "Nodesto Caps Condensed";
+        src: url('./5th_Edition_Font_Clones_CC/Nodesto Caps Condensed.otf') format("opentype") ;
         }
-        body { 
-            margin: 0;
-            padding: 0;
-            background-color: #EEE5CE;
-            background-image: url(phb-background.jpg);
+        body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #EEE5CE;
+        background-image: url(phb-background.jpg);
         }
         .my-title {
-            height: 90px;
-            width: 100%; /* -- spans 100% and text aligns to center */
-            font-size: 100px;
-            font-family: "Nodesto Caps Condensed";
-            color: red;
-            text-align: center;
-            display: block;
-            vertical-align: top;
-            position: relative;
+        height: 200px;
+        font-size: 200px;
+        font-family: "Nodesto Caps Condensed";
+        color: red;
+        text-align: center;
+        display: block;
+        vertical-align: top;
+        position: relative;
         }
         .my-dwarf {
-            text-align: center;
-            display: block;
-            vertical-align: middle;
-            position: relative;
+        text-align: center;
+        display: block;
+        vertical-align: middle;
+        position: relative;
         }
-
-    </style>
-</head>
-<body>
-
-    <div class="my-title"> 
-        Help Wanted! 
-    </div>
-    <div class="my-dwarf">
-        <img src="./Dwarf_PHB5e_no_bg.png">
-    </div>
-
-</body>
+        /* get things by id as opposed to class */
+        #my-dwarf-picture {
+        width: 20%;
+        height: 20%;
+        /* border is 10px in width and there are two lines in color red */
+        border: 10px double red;
+        border-radius: 5px;
+        }
+        .my-text-box {
+        font-family: "Nodesto Caps Condensed";
+        font-size: 75px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.2em;
+        position: relative;
+        display: block;
+        }
+        .my-text-box ul {
+        display: block;
+        list-style-type: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="my-title">
+            <a>Help Wanted! </a>
+        </div>
+        <div class="my-dwarf">
+            <img id="my-dwarf-picture" src="./Dwarf_PHB5e_no_bg.png">
+        </div>
+        <div class="my-text-box">
+            <ul>
+                <li>Four adventurers!</li>
+                <li>Do you have a taste for danger?</li>
+                <li>Do you eat danger for breakfast?</li>
+                <li>Come to the Bloated Goat for a taste of adventure!</li>
+            </ul>
+        </div>
+    </body>
 </html>
 <!-- something -->
