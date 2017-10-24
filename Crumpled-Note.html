@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>A suspicious entry</title>
+        <title>A Suspicious Entry</title>
         <style type="text/css">
         @font-face {
         font-family: "Nodesto Caps Condensed";
@@ -46,12 +46,13 @@
         border-radius: 5px;
         }*/
         .my-text-box {
+		padding: 5%;
         font-family: "Bookinsanity";
-        font-size: 75px;
+        font-size: 4em;
         text-align: center;
         line-height: 1em;
         position: relative;
-        display: inline;
+		display: block;
         }
         .my-text-box ul {
         display: inline;
@@ -72,12 +73,29 @@
         box-shadow: 0 0 200px rgba(30,0,5,1) inset;
         z-index: -10;
         }
+		#blood{
+		position: absolute;
+		top: 0px;
+		opacity: .5; 
+		z-index: -1; /* make the image render underneath the text */
+		width: 100%;
+		height: 100%;
+		}
+		#blood2 {
+		position: absolute;
+		top: 0px;
+		z-index: -2;
+		opacity: .8;
+		}
+		@media print{
+		body{ font-size: .8em; } /* make the font smaller when printing */
+		}
         </style>
     </head>
     <body>
         <div class="vignette"></div>
         <div class="my-title">
-        <p>
+        <p style="display: none;">
             Most of the writing is difficult to make out - with blood stains covering up chunks of text. There is a section toward the bottom that you can read.
         </p>
         </div>
@@ -89,6 +107,8 @@
         the key to unlocking the secrets of this old place. Old
         Shatterbone isn't too happy about it, but then again he nev...
         </div>
+		<img id="blood" src="blood.png">
+		<img id="blood2" src="blood2.svg">
     </body>
 </html>
 <!-- something -->
