@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wanted</title>
+        <style type="text/css">
+        @font-face {
+        font-family: "Nodesto Caps Condensed";
+        src: url('./5th_Edition_Font_Clones_CC/Nodesto Caps Condensed.otf') format("opentype") ;
+        }
+        body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #EEE5CE;
+        background-image: url(phb-background.jpg);
+        }
+        .my-title {
+        height: 200px;
+        font-size: 200px;
+        font-family: "Nodesto Caps Condensed";
+        color: red;
+        text-align: center;
+        display: block;
+        vertical-align: top;
+        position: relative;
+        }
+        .my-brog {
+        text-align: center;
+        display: block;
+        vertical-align: middle;
+        position: relative;
+        }
+        /* get things by id as opposed to class */
+        #my-brog-picture {
+        width: 390px;
+        height: 390px;
+        /* border is 10px in width and there are two lines in color red */
+        border: 10px double red;
+        border-radius: 5px;
+        }
+        .my-text-box {
+        font-family: "Nodesto Caps Condensed";
+        font-size: 75px;
+        text-align: center;
+        line-height: 1em;
+        position: relative;
+        display: inline;
+        }
+        .my-text-box ul {
+        display: inline;
+        vertical-align: top;
+        list-style-type: none;
+        margin:0px;
+        }
+        h1 {
+        text-align: center;
+        margin-top: 4em;
+        }
+        .vignette {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 200px rgba(30,0,5,1) inset;
+        z-index: -10;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="vignette"></div>
+        <div class="my-title">
+            <a>Wanted!</a>
+        </div>
+        <div class="my-brog">
+            <img id="my-brog-picture" src="./Brog.png">
+        </div>
+        <div class="my-text-box">
+            <ul>
+                <li>By the order of Knight Commander Withrum Scrumbulon, of the Army of Spring</li>
+                <li>Price 2000 GP</li>
+                <li>Bring to the town of Stormwood the head of the pictured barbarian</li>
+            </ul>
+        </div>
+    </body>
+</html>
+<!-- something -->
