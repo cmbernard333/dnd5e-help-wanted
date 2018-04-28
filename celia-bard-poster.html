@@ -35,8 +35,11 @@
         .my-unicorn {
         text-align: center;
         display: inline;
-        vertical-align: middle;
+        vertical-align: center;
         position: relative;
+        float: right;
+        padding-right: 520px;
+        bottom: 50px;
         }
 
         /* get things by id as opposed to class */
@@ -99,6 +102,21 @@
         box-shadow: 0 0 200px rgba(30,0,5,1) inset;
         z-index: -10;
         }
+
+        @media print {
+            .my-text-box {
+                font-size: 40px;
+                line-height: 1em;
+            }
+            #my-celia-picture {
+                width: 50% ;
+                height: 30%  ;
+            }
+            .my-unicorn {
+                padding-right : 100px;
+            }
+        }
+
         </style>
     </head>
     <body>
