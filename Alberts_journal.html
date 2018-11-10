@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Eventide</title>
+    <title>Albert's Journal</title>
     <style type="text/css">
         @font-face {
             font-family: "Nodesto Caps Condensed";
@@ -16,8 +16,12 @@
             src: url('./5th_Edition_Font_Clones_CC/Bookinsanity.otf') format("opentype") ;
         }
         @font-face {
-            font-family: "Twilight New Moon";
-            src: url('./twilight_new_moon/twilight New Moon.ttf') format("truetype") ;
+            font-family: "TwoTurtleDoves";
+            src: url('./two-turtle-doves/doves.ttf') format("truetype") ;
+        }
+        @font-face {
+            font-family: "Diogenes";
+            src: url('./diogenes/DIOGENES.ttf') format("truetype") ;
         }
         body {
             width: 100%;
@@ -27,8 +31,8 @@
             background-color: white;
         }
         .my-title {
-            height: 20px;
-            font-size: 35px;
+            height: 50px;
+            font-size: 20px;
             font-family: "Bookinsanity Italic";
             color: black;
             text-align: center;
@@ -40,13 +44,25 @@
         .my-text-box {
             /*background-color: white; */
             padding: 5%;
-            font-family: "Twilight New Moon";
+            font-family: "TwoTurtleDoves";
             font-size: 2em;
             text-align: center;
             line-height: 1em;
             position: relative;
             display: block;
             background: url(phb-background.jpg);
+        }
+
+        .my-cthulhu-text-box {
+            /*background-color: white; */
+            /*padding: 5%;*/
+            font-family: "Diogenes";
+            font-size: 1em;
+            text-align: center;
+            line-height: 1em;
+            position: relative;
+            display: block;
+            color: red;
         }
 
         .my-text-box:before{
@@ -92,30 +108,54 @@
             body{ font-size: .8em; } /* make the font smaller when printing */
             /*#blood{ width: 70%; height: 70%; }*/
         }
+        #my-list { 
+        display: block;
+        list-style-type: disc;
+        margin-top: 1em;
+        margin-bottom: 1 em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+        }
     </style>
 </head>
 <body>
     <div class="vignette"></div>
     <div class="my-title">
         <p style="display: none;">
-            My demoness,
+            Xanmar Pael,
         </p>
     </div>
     <div class="my-text-box">
-        <p id="my-signature">Excerpts from this book are mostly unintelligible and the parts that are easily read have spelling errors, grammatical mistakes, and appear to be the ramblings of an angsty teenage author. One section stands out and can be read without any difficulty.</p>
-        <p>
-        <p>
-        "I cannot darest make you my immortal lover. I have a yearning for someone with much more...hair." Elizabeth swooned like young girls often do.
-        </p>
-        <p>
-        Eduardo came within the most intimate inch of her pale and shadow covered face. It was like an albino with mascara. He reached out with his long and lusty fingers "Why must you tempt this immortal so? Why do you make me shudder in a man's lustful rage? It's that werewolf is it not? That Jacobi!" Elizabeth shuddered at Eduardo's woeful words and held back her sobs for she was torn between two sexual worlds.
-        </p>
-        <p>
-        Without warning, a crash came through the window of their secret rendezvous: a prominent, hairy, muscular beast with great gnashing teeth. Within seconds, the beast transformed into a dark skinned, chiseled young man with a scowl to make any maiden shudder.
-        </p>
-        <p>
-        Jacobi walked, delighting in his own manliness, and put an arm around the swooning Elizabeth, his dark, strong, body pressing against her. Jacobi points at Eduardo, "Eduardo, Elizabeth does no wane for you just now. She longs to be with me!"
-        </p>
+        Albert's Journal (secret. do not look)
+        <p id="my-signature"></p>
+        <ul class="my-list">
+           <li>1st entry:</li>
+           <p>
+            Mommy told me to write down things that make me scared. She says putting words down for my fears makes them less scary.
+           </p>
+           <li>2nd entry:</li>
+           <p> 
+               Had a scary nightmare. Black octopus chasing me through my dreams.
+           </p>
+           <li>3rd entry:</li>
+           <p>
+                The black octopus is hiding inside the white angel lady. She doesn't want to share.
+           </p>
+           <li>4th entry:</li>
+           <p>
+               The black octopus was in my dreams again yesterday. Said he wants to play with me. He kept repeating this: 
+           </p>
+           <div class="my-cthulhu-text-box"> 
+                Y' ah nyth'drn ot fhtagn
+                <br>
+                Y' ah nyth'drn ot fhtagn
+                <br>
+                Y' ah nyth'drn ot fhtagn
+                <br>
+           </div>
+           <p>I don't know what it means, but he told me to say it when I meet the green man.</p>
+        </ul>
     </div>
 
 </body>

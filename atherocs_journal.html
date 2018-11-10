@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Eventide</title>
+    <title>Valorne's Mother's Journal</title>
     <style type="text/css">
         @font-face {
             font-family: "Nodesto Caps Condensed";
@@ -16,8 +16,12 @@
             src: url('./5th_Edition_Font_Clones_CC/Bookinsanity.otf') format("opentype") ;
         }
         @font-face {
-            font-family: "Twilight New Moon";
-            src: url('./twilight_new_moon/twilight New Moon.ttf') format("truetype") ;
+            font-family: "Scaly Sans Caps";
+            src: url('./5th_Edition_Font_Clones_CC/Scaly Sans Caps.otf') format("opentype");
+        }
+        @font-face {
+            font-family: "TomsHandwriting";
+            src: url('./toms-handwriting/tomhand.ttf') format("truetype");
         }
         body {
             width: 100%;
@@ -27,8 +31,8 @@
             background-color: white;
         }
         .my-title {
-            height: 20px;
-            font-size: 35px;
+            height: 50px;
+            font-size: 20px;
             font-family: "Bookinsanity Italic";
             color: black;
             text-align: center;
@@ -39,14 +43,25 @@
 
         .my-text-box {
             /*background-color: white; */
-            padding: 5%;
-            font-family: "Twilight New Moon";
+            padding: 15px;
+            font-family: "Scaly Sans Caps";
             font-size: 2em;
             text-align: center;
-            line-height: 1em;
+            line-height: 0.75em;
             position: relative;
             display: block;
             background: url(phb-background.jpg);
+        }
+
+        .my-messy-text-box {
+            /*background-color: white; */
+            /*padding: 5%;*/
+            font-family: "TomsHandwriting";
+            font-size: 1em;
+            text-align: left;
+            line-height: 1em;
+            position: relative;
+            display: block;
         }
 
         .my-text-box:before{
@@ -79,8 +94,9 @@
             list-style-type: none;
             margin:0px;
         }
+
         #my-signature {
-            font-size: 1em;
+            font-size: 0.75em;
             font-family: "Nodesto Caps Condensed";
         }
 
@@ -89,34 +105,49 @@
             margin-top: 4em;
         }
         @media print{
-            body{ font-size: .8em; } /* make the font smaller when printing */
-            /*#blood{ width: 70%; height: 70%; }*/
+            body{ font-size: .60em; } /* make the font smaller when printing */
+        }
+        #my-list { 
+        display: block;
+        list-style-type: disc;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
         }
     </style>
 </head>
 <body>
     <div class="vignette"></div>
-    <div class="my-title">
-        <p style="display: none;">
-            My demoness,
-        </p>
-    </div>
     <div class="my-text-box">
-        <p id="my-signature">Excerpts from this book are mostly unintelligible and the parts that are easily read have spelling errors, grammatical mistakes, and appear to be the ramblings of an angsty teenage author. One section stands out and can be read without any difficulty.</p>
+        <p id="my-signature">Scanning through parts you realize they are written in different languages. Common, elvish, dwarvish, bits in halfling. Most of it makes very little sense. You find a couple of passages that stand out and are written in common.</p>
         <p>
-        <p>
-        "I cannot darest make you my immortal lover. I have a yearning for someone with much more...hair." Elizabeth swooned like young girls often do.
-        </p>
-        <p>
-        Eduardo came within the most intimate inch of her pale and shadow covered face. It was like an albino with mascara. He reached out with his long and lusty fingers "Why must you tempt this immortal so? Why do you make me shudder in a man's lustful rage? It's that werewolf is it not? That Jacobi!" Elizabeth shuddered at Eduardo's woeful words and held back her sobs for she was torn between two sexual worlds.
-        </p>
-        <p>
-        Without warning, a crash came through the window of their secret rendezvous: a prominent, hairy, muscular beast with great gnashing teeth. Within seconds, the beast transformed into a dark skinned, chiseled young man with a scowl to make any maiden shudder.
-        </p>
-        <p>
-        Jacobi walked, delighting in his own manliness, and put an arm around the swooning Elizabeth, his dark, strong, body pressing against her. Jacobi points at Eduardo, "Eduardo, Elizabeth does no wane for you just now. She longs to be with me!"
-        </p>
-    </div>
+        <ul>
+            <li >Entry 1</li>
+            <p>
+            Wasted. Weird. Wrong. I can travel between dimensions in the material plane and the astral plane but I can't travel to the far away places in the stories of my youth. Have to try again.
+             </p>
+            <li >Entry 4</li>
+            <p>
+            Almost there. I have created a portal to one of my favorite childhood stories The Very Hungry Purple Worm, but this is simple. Juvenile. More complex works require greater magic!
+             </p>
+            <li >Entry 7</li>
+            <p>
+            Books! That is the key. Books! Books contain words. They contain the stories. I need a tome. A tome to contain the stories, the worlds, the complexities! 
+             </p>
+             <li>Entry 12 </li>
+             <p>
+            The Tome has more worlds that I have ever seen. I've experienced so many things. Reality struggles to compare to these vast tapestries!
+             </p>
+             <li>Entry 18</li>
+             <p>
+            The Tome is alive. It first spoke with the voice of Leonard in Of Mimics and Men. Many voices came to follow. 
+             </p>
+             <li>Entry 25</li>
+             <p>
+            My mind is far too glossed with the experiences I have shared here. I wish to retire to something bizarre and worldly and wonderful. The Tome suggests places now. It gives me worlds that it creates, but they lack the same imagination as mortal authors. I shall retire soon and no longer live in this boring plane.
+             </p>
+             <p id="my-signature">Flipping through passages in the back of the book you find a set of rings fall out. </p>
+</div>
 
 </body>
 </html>
