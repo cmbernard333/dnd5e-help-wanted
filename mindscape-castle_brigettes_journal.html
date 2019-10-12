@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brigette's Journal</title>
+    <style type="text/css">
+        @font-face {
+            font-family: "Nodesto Caps Condensed";
+            src: url('./5th_Edition_Font_Clones_CC/Nodesto Caps Condensed.otf') format("opentype") ;
+        }
+        @font-face {
+            font-family: "Bookinsanity Italic";
+            src: url('./5th_Edition_Font_Clones_CC/Bookinsanity Italic.otf') format("opentype") ;
+        }
+        @font-face {
+            font-family: "Bookinsanity";
+            src: url('./5th_Edition_Font_Clones_CC/Bookinsanity.otf') format("opentype") ;
+        }
+        @font-face {
+            font-family: "Scaly Sans Caps";
+            src: url('./5th_Edition_Font_Clones_CC/Scaly Sans Caps.otf') format("opentype");
+        }
+        @font-face {
+            font-family: "TomsHandwriting";
+            src: url('./toms-handwriting/tomhand.ttf') format("truetype");
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .my-title {
+            height: 50px;
+            font-size: 20px;
+            font-family: "Bookinsanity Italic";
+            color: black;
+            text-align: center;
+            display: block;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .my-text-box {
+            /*background-color: white; */
+            padding: 15px;
+            font-family: "Scaly Sans Caps";
+            font-size: 2em;
+            text-align: center;
+            line-height: 0.75em;
+            position: relative;
+            display: block;
+            background: url(phb-background.jpg);
+        }
+
+        .my-messy-text-box {
+            /*background-color: white; */
+            /*padding: 5%;*/
+            font-family: "TomsHandwriting";
+            font-size: 1em;
+            text-align: left;
+            line-height: 1em;
+            position: relative;
+            display: block;
+        }
+
+        .my-text-box:before{
+            background-color: white;
+            content: ""; 
+            height: 12px;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            clip-path: polygon(0% 0%, 2% 82%, 4% 0%, 6% 77%, 8% 0%, 10% 94%, 12% 0%, 14% 37%, 16% 0%, 18% 62%, 20% 0%, 22% 56%, 24% 0%, 26% 31%, 28% 0%, 30% 20%, 32% 0%, 34% 55%, 36% 0%, 38% 20%, 40% 0%, 42% 53%, 44% 0%, 46% 78%, 48% 0%, 50% 99%, 52% 0%, 54% 75%, 56% 0%, 58% 40%, 60% 0%, 62% 71%, 64% 0%, 66% 26%, 68% 0%, 70% 78%, 72% 0%, 74% 48%, 76% 0%, 78% 23%, 80% 0%, 82% 38%, 84% 0%, 86% 93%, 88% 0%, 90% 42%, 92% 0%, 94% 88%, 96% 0%, 98% 51%, 100% 0%);
+        }
+
+        .my-text-box:after{
+            background-color: white;
+            content: ""; 
+            height: 12px;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            clip-path: polygon(0% 100%, 2% 0%, 4% 46%, 6% 0%, 8% 26%, 10% 0%, 12% 58%, 14% 0%, 16% 35%, 18% 0%, 20% 94%, 22% 0%, 24% 99%, 26% 0%, 28% 29%, 30% 0%, 32% 36%, 34% 0%, 36% 71%, 38% 0%, 40% 83%, 42% 0%, 44% 75%, 46% 0%, 48% 99%, 50% 0%, 52% 33%, 54% 0%, 56% 50%, 58% 0%, 60% 85%, 62% 0%, 64% 42%, 66% 0%, 68% 89%, 70% 0%, 72% 37%, 74% 0%, 76% 23%, 78% 0%, 80% 86%, 82% 0%, 84% 81%, 86% 0%, 88% 75%, 90% 0%, 92% 56%, 94% 0%, 96% 90%, 98% 0%, 100% 100%);
+            /*
+            clip-path: polygon(0% 100%, 5%  0%, 10% 100%, 15%  0%, 20% 100%, 25% 0%, 30% 100%, 35%  0%, 40% 100%, 45%  0%, 50% 100%, 55%  0%, 60% 100%, 65%  0%, 70% 100%, 75%  0%, 80% 100%, 85%  0%, 90% 100%, 95%  20%, 100% 100%);*/ 
+        }
+
+        .my-text-box ul {
+            display: inline;
+            vertical-align: top;
+            list-style-type: none;
+            margin:0px;
+        }
+
+        #my-signature {
+            font-size: 0.75em;
+            font-family: "Nodesto Caps Condensed";
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 4em;
+        }
+        @media print{
+            body{ font-size: .60em; } /* make the font smaller when printing */
+        }
+        #my-list { 
+        display: block;
+        list-style-type: disc;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="vignette"></div>
+    <div class="my-text-box">
+        <p id="my-signature">
+            The book is dirty and water damaged and many of its pages are torn out. It appears second hand and shoddily built. It is scrawled in a child's hand.
+        </p>
+        <ul>
+            <li >Entry 1</li>
+            I used some of Gran's money to buy myself a diary when I rode Wilbur to town today. I got it from a nice man town. Gran seems very mad that I used the money but I told her the merchant said that's how much Milk cost today. 
+            Gran seems very mad Papa is gone. She seems even more mad that Mommy and Daddy are gone. She seems very mad she has to look after me.
+            <p>
+             </p>
+            <li >Entry 5</li>
+            <p>
+                Gran found my journal today and tossed it outside into a puddle. She told me if I have secrets she wants to know them all. It seems I shouldn't write nasty things in here. Atleast Wilbur listens.
+             </p>
+            <li >Entry 6</li>
+            <p>
+                Wilbur is the best friend that I have ever. He's always happy to see me. And listens to all my troubles with Gran. And his barn is warm and dry, unlike my bed. I wonder if I run away if Gran would even miss me.
+             </p>
+             <li>Entry 8</li>
+             <p>
+                 Today I am running away. Gran can no longer be mean to me anymore. Never ever. She can be lonely with her treasures underneath her bed, which she won't let me see. I miss you mommy and daddy. One day I hope to be as nice as you.
+             </p>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+<!-- something -->
