@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attention Adventurers into Chult!</title>
+        <style type="text/css">
+        @font-face {
+        font-family: "Nodesto Caps Condensed";
+        src: url('./5th_Edition_Font_Clones_CC/Nodesto Caps Condensed.otf') format("opentype") ;
+        }
+        @font-face {
+            font-family: "Scriptina";
+            src: url('./scriptina/SCRIPTIN.ttf') format("truetype") ;
+        }
+        body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #EEE5CE;
+        background-image: url(phb-background.jpg);
+        }
+        .my-title {
+        height: 200px;
+        font-size: 128px;
+        font-family: "Nodesto Caps Condensed";
+        color: red;
+        text-align: center;
+        display: block;
+        vertical-align: top;
+        position: relative;
+        }
+        .my-coin {
+        text-align: center;
+        display: block;
+        vertical-align: middle;
+        position: relative;
+        }
+        /* get things by id as opposed to class */
+        #my-coin-picture {
+        width: 372px;
+        height: 372px;
+        /* border is 10px in width and there are two lines in color red */
+        border: 10px double red;
+        border-radius: 5px;
+        }
+        .my-text-box {
+        font-family: "Nodesto Caps Condensed";
+        font-size: 64px;
+        text-align: center;
+        line-height: 1em;
+        position: relative;
+        display: block;
+        padding: 5%;
+        }
+        .fancy-text {
+        font-family: "Scriptina";
+        font-size: 64px;
+        text-align: center;
+        line-height: 1em;
+        display: block;
+        }
+        .my-text-box ul {
+        display: inline;
+        vertical-align: top;
+        list-style-type: none;
+        margin:0px;
+        }
+        h1 {
+        text-align: center;
+        margin-top: 4em;
+        }
+        .vignette {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 200px rgba(30,0,5,1) inset;
+        z-index: -10;
+        }
+        @media print {
+        .my-title {
+            top: 45px;
+            font-size: 72px;
+        }
+        .my-text-box {
+                font-size: 42px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        .fancy-text {
+            top:
+        }
+        /* #my-coin-picture {
+                height:55%;
+                width:55%;
+            } */
+        }
+        </style>
+    </head>
+    <body>
+        <div class="vignette"></div>
+        <div class="my-title">
+            <a>Attention: Chult Adventurers! </a>
+        </div>
+        <div class="my-coin">
+            <img id="my-coin-picture" src="https://www.aidedd.org/assets/univers/ro/ytepka-society.jpg">
+        </div>
+        <div class="my-text-box">
+            By Decree of the Merchant Prince, Jobal of Port Nyanzaru, it is recommended to only consort with guides registered to the Port Nyanzaru Guide Authority.
+            All person(s) claiming the skills or identity of a guide and found masquerading as such will be beated, blinded, or beheaded based on the degree of the offense.
+        </div>
+        <div class="fancy-text">
+                Jobal
+        </div>
+    </body>
+</html>
+<!-- something -->
